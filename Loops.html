@@ -1,0 +1,87 @@
+<!--5 types of Loops
+1)for loop---when the count of tasks to do is mentioned
+2)while loop---when the count of task to do is not mentioned and it is used when the given condition is true.
+3)do while loop---do the process untill the condition met.(Min =1time max=untill the contion met)
+4)for in loop--It is mainly used to loop through the properties of an object
+It iterates over the keys or indexes.not on the values of the iterable object
+Ex:Person has name,age,city are the properties
+5)for of loop--It is mainly loop over iterable objects liek arrays,strings,maps,sets,
+It iterates over the values of the iterable object, not the keys or indexes.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //for loop
+        // var sum=0;
+        // var n=prompt("Enter a number")
+        // for(let i=0;i<n;i++){
+        //     sum=sum+i;
+        // }
+        // document.write(sum);
+
+        //while loop
+        // var n= prompt("Enter a number")
+        // while(n!=0){
+        //     document.write("Enter number :"+n)
+        //     n= prompt("Enter a number")
+        // }
+
+        // var sum=0
+        // var n=prompt("Enter number")
+        // while(n<5){
+        //     sum=sum+n;
+        // }
+        // n++
+        // document.write(sum)
+
+        // do while loop
+        // var i=5
+        // do{
+        //     num=prompt("Enter your number")
+        //     document.write("Entered number :"+num)
+        //     i=i-1
+        // }
+        // while(i>0)
+
+        // for in--it gives the position(index) of element in array
+            // var animal=['lion','tiger','bear','zebra','giraffe']
+            // for(i in animal){
+            //     document.write(i +" "+animal[i]+" "+'<br>')
+            // }
+
+        // for in loop on objects
+        var student={
+            '100':"Sai",
+            '101':"Ram",
+            "102":"Harsha"
+        }
+        for(i in student){
+            document.write(i+" "+student[i]+" "+'<br>')
+        }
+
+        var str="India"
+
+        for(i in str){
+            document.write(i+ " "+str[i]+" "+'<br>')
+        }
+
+        // for of--it gives the elements in every index
+        // we cant use this loop on objects becaus it is used to iterate over the group of values 
+        // but only on key and values combination
+            // var animal=['lion','tiger','bear','zebra','giraffe']
+            // for(i of animal){
+            //     document.write(i+" ")
+            // }
+        
+
+
+
+    </script>
+</body>
+</html>

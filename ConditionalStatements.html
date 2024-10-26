@@ -1,0 +1,73 @@
+<!--Conditional Statements 
+1.if
+2.if--else
+3.if--else if-else
+4.Switch statement
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var balance=100000;
+        // var a=prompt("Enter amount to transfer")
+        // // document.write(a)
+        // if(a<balance){
+        //     alert("Before Deduction"+balance)
+        //     balance=balance-a;
+        //     alert("Transfered Succesfully")
+        //     alert("After Deduction"+balance)
+        // }
+        // else{
+        //     alert("Your balance is :"+balance+"enter amount less than your balance")
+        // }
+        // alert("Bye Bro")
+
+        // var score=prompt("Enter Your Marks");
+        // var garde
+
+        // if(score>=90){
+        //     grade="A"
+        // }
+        // else if(score>=80){
+        //     grade="B"
+        // }
+        // else if(score>=70){
+        //     grade="C"
+        // }
+        // else if(score>=60){
+        //     grade="D"
+        // }
+        // else{
+        //     grade="F"
+        // }
+        // document.write("Your marks : "+ score +" Grade : "+ grade)
+        
+        //Switch Case
+
+        var num1=+prompt("Enter number1")
+        var num2=+prompt("Enter number2")
+        var operation=prompt("Enter which operation to do (+/-/*//)")
+        switch(operation){
+            case '+':
+                alert("Sum of two number is " + (num1+num2))
+                break;
+            case '-':
+                alert("Sum of two number is " + (num1-num2))
+                break;
+            case '*':
+                alert("Sum of two number is " + (num1*num2))
+                break;
+            case '/':
+                alert("Sum of two number is " + (num1/num2))
+                break;
+            default:
+                alert("Enter valid operation")
+        }
+   </script>
+</body>
+</html>
