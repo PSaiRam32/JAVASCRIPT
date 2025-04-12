@@ -1,0 +1,103 @@
+<!--
+1.Why arrays--It is used to represent a group of variables with single name(With different Datatypes or same datatypes)
+2.How to declare arrays--2 names(using name,using new Array Function)
+Ex: var movies=[],var movies=new Array()
+3.How to access array elements--Array-name[index]
+Ex: movies[2],movies[100]
+4.How to update/add array elements
+Add--Array-Name[index number]="Value"
+Ex:movies[100]="Devara"
+5.Methods on arrays
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // How to declare arrays
+        var movies=["Bahubali","RRR","Spirit","Tiger"]
+        var animals=new Array('Lion','Tiger','Zebra','Elephant')
+        // console.log(movies)
+        // console.log(animals)
+        // document.write(movies)
+        // document.write('<br>')
+        //empty Array
+        // var moies=[]
+
+        // How to access array elements
+        // document.write(movies[1])
+        // document.write('<br>')
+        // document.write(movies[6])
+
+        // document.write('<br>')
+
+        // How to update/add array elements
+
+        // document.write(movies)
+        // document.write('<br>')
+        // console.log(movies)
+        // movies[4]="GabbarSingh"
+        // document.write(movies)
+        // console.log(movies)
+        // movies[100]="Devara"
+        // console.log(movies)
+        // console.log(movies[90])
+
+        // //Storing Heterogeneous Elements
+        // movies[50]=100
+        // console.log(movies)
+        // console.log(movies.length)
+        // document.write(movies)
+        // document.write('<br>')
+        // document.write(movies.length)
+
+        //Methods on array:
+        // 1.push()--To Add elements when the size of array is not known and the new data is added at end
+        // 2.pop()--To remove elemenst at the end of the array 
+        // 3.Unshift()--To add the element at firsst position in the existing array 
+        // 4.shift()--To remove the first element in the array
+        // 5.indexOf()--To know the index of the element in the array,it return the first index of element of 
+        // when it is present multiple times,if the value is not present in array it return -1'
+        // 6.Slice()--It gives the part of array based on the index mentioned
+
+        // movies.push('KING')
+        // document.write('<br>')
+        // document.write(movies)
+        // movies.push('PONNIYAN SELVAN')
+        // document.write('<br>')
+        // document.write(movies)
+
+        // document.write('<br>')
+        // var removed=movies.pop()
+        // document.write(removed)
+        // document.write('<br>')
+        
+        // document.write(movies)
+        console.log(movies)
+        // document.write('<br')
+        // movies.unshift('ANIMAL')
+        // // document.write(movies)
+        // console.log(movies)
+
+        // var movremoved=movies.shift()
+        // console.log("rmeoved movie : "+movremoved)
+        // console.log(movies)
+
+        // console.log("RRR INDEX : "+movies.indexOf('RRR'))
+
+        // console.log("Element is not present in Array :",movies.indexOf('ANIMAL'))
+        movies.push("ANIMAL")
+        console.log(movies)
+        // it print values form 0 to 4-1
+        console.log(movies.slice(1,4))
+
+
+
+    </script>
+</body>
+</html>

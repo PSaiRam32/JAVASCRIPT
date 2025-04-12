@@ -1,0 +1,50 @@
+<!--1.It is used to store the Information
+
+How to create Variables:
+1.var -- Able to modifed later and need not to be assigned when declared
+variable can be declared with same names using var
+NO Block level scope- can be access evrywhere
+2.let -- Able to modifed later and need not to be assigned when declared
+variable cannot be declared with same names using let
+Block level scope can be access only inside the block
+3.const -- Assined when declared and cant be able to modify the value once declared
+Block level scope can be access only inside the block
+
+ex:var name="Sai"
+var num1
+
+Rules:
+1.Variable names Contains only letters and digits
+2.Variable names start with letters or _
+3.Variable names are case sensitive
+4.Camel Case convention
+num1=5;-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+        console.log(num1)
+        var num1
+        let num2=20
+        console.log(num2)
+        const num3=12
+        console.log(num3)
+        num1=100
+        console.log(num1)
+        num2=900
+        console.log(num2)
+        {
+            var x=10
+            console.log(x)
+        }
+        console.log(x)
+    </script>
+</body>
+</html>

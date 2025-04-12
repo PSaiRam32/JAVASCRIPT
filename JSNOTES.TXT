@@ -1,0 +1,49 @@
+TOPICS TO LEARN
+
+Basic
+
+1.Intro and Features
+2.Variables in JS
+3.Data Types
+4.Operators
+5.Conditional and Control Statements
+6.Loops
+7.Data Structure
+8.Scope
+9.Objects
+10.Functions
+11.Form Validations
+12.DOM(Document Object Model) Manipulation
+13.Events
+14.BOM(Browser Object MOdel) Elements
+
+Adv
+1.prototyping
+2.Proto Type inheritance
+3.Call backs
+4.IIFE--Immediatley invoked function expression
+5.Promises
+6.Ajax
+7.Async Await
+8.Closures
+9.Clousers
+10.OPPS Concepts
+11.JSON
+
+1.How to link JS to HTML ?
+<body>
+<script type="text/javascript>
+
+</script>
+
+</body>
+
+Linking External Filename
+<script src="##Filename"></script>
+
+2.Print using javascript
+A.
+alert(" ")
+Document.write()
+innerhtml-->
+

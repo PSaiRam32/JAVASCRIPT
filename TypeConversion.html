@@ -1,0 +1,102 @@
+<!--Type Conversion
+Conversion of data from one type to another like from number to string and string to number 
+2 Types
+1.Implicit(coersion) -- Conversion by java script engine whihc is present in browser from one form to another
+2.Explicit-- Manul code written by user   
+a.Number --- if there is a possibility we can convert it else it throws an error states NaN(Not a number)
+b.String --- Anything should be converted into String by placing with double quotes
+c.Boolean --- Expect 0 and null anything should be converted and the reult is true 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Implicit Conversion 
+
+        // 1.when plus(+) is given between one string and number the number is converted into string and performs the operation
+        // document.write(2+"4")
+        // document.write('<br>')
+        // // 2.when minus(-) is given between one string and number the string is converted into number and perfroms the operation
+        // document.write(2-"4")
+        // document.write('<br>')
+        // // 3.If minus(-) between string and number it cant able to convert string to number and throughs "NaN"
+        // document.write(2-"SAI")
+        // document.write('<br>')
+        // //4.True converted to 1  and false converted to 0 and perfroms the operation
+        // document.write(3+true)
+        // document.write('<br>')
+        // document.write(false+12)
+
+        //Explict -- Number,String,Boolean
+
+        // var a="Java"
+        // document.write(a+" :"+ typeof(a))
+        // document.write('<br')
+        var a="10"
+        // document.write(Number(a))
+        // document.write('<br>')
+
+        // var b=Number(a)
+        // document.write(typeof(b))
+        // document.write('<br>')
+
+        // document.write(Number("20030302Sai"))
+        // document.write('<br>')
+
+        // document.write(parseInt("2003Sai"))
+        // document.write('<br>')
+
+        // document.write(parseFloat("20.03Sai"))
+        // document.write('<br>')
+
+        // var b=2003
+        // document.write(typeof(b))
+        // document.write('<br>')
+
+        // k=String(b)
+        // document.write(typeof(k))
+        // document.write('<br>')
+
+        // var x=69
+        // document.write(typeof(x))
+        // document.write('<br>')
+        
+        // y=Boolean(" ")
+        // document.write(y)
+        // document.write('<br>')
+
+        // y=Boolean("Sai")
+        // document.write(y)
+        // document.write('<br>')
+
+        // y=Boolean(7)
+        // document.write(y)
+        // document.write('<br>')
+
+        // y=Boolean(19.9)
+        // document.write(y)
+        // document.write('<br>')
+
+        // y=Boolean(null)
+        // document.write(y)
+        // document.write('<br>')
+
+        y=Boolean(0)
+        document.write(y)
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

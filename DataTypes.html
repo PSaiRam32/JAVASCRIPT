@@ -1,0 +1,78 @@
+<!-- Data Types--
+Primitive(Primary)---Number,String,Boolean
+Special--undefined,Null
+Composite(Group of Primitive types)--Array,object -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Number Data Type
+        // var x=87
+        // //It tells us wich type of data stored in the variable
+        // console.log(typeof(x))
+        // console.log(x)
+
+        // String Data Type
+        // var y='Sai'
+        // var z="sai 'ram' "
+        // var z1='sai "ram" '
+        // console.log(typeof(y))
+        // console.log(z)
+        // console.log(z1)
+        // console.log(typeof(z))
+
+        // //boolean(True or false)--It is used when conditions are checking
+        // var b=true
+        // console.log(b)
+        // console.log(typeof(b))
+
+        //Special DataTypes
+        //Undefined--When u declare a variable and no value is assigned/stored to it
+
+        // var s
+        // console.log(typeof(s))
+        // console.log(s)
+
+        // var s="abc"
+        // console.log(typeof(s))
+
+        //Null-->When u declare a variable and null is assigned to it 
+        //It will take single value
+        
+        // var s=null
+        // console.log(s)
+
+        //Composite datatypes--Group of values of having primitive datatypes of different type
+        //-->Array and Object
+
+        //Array--Data of group of people
+        var names=["sai",'ram','paidipati',true,10]
+        console.log(names)
+
+        // Object--It is used to store group of key value pairs data.
+        //Key always be string
+        //value is either primitive,special or composite datatypes
+        //Data of single person using key value pair
+
+        // var obj ={'name' :'sai','age':21,'married':false,'land':null}
+        // console.log(obj)
+
+        //Storing objects as single value in array
+        var students=[
+        {'name' :'sai','age':21,'married':false,'land':null},
+        {'name' :'Ram','age':20,'married':true,'land':3},
+        {'name' :'Harsha','age':19,'married':false,'land':null},
+        {'name' :'Vardhan','age':18,'married':true,'land':3}
+        ]
+        console.log(students)
+        console.log(students.length)
+    </script>
+</body>
+</html>
