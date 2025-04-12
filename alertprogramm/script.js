@@ -1,0 +1,6 @@
+console.log("Hello world")
+console.log('Hey Bro')
+window.console.log('Hey Bro2')
+alert("Namasthae Cheppu Bhayya")
+window.alert("Nenu JS Nerchukuntunanu")
+console.log(window)

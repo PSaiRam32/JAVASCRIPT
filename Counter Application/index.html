@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter Appliations</title>
+    <style>
+        body{
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        #res{
+            font-size: 50px;
+            display: flex;
+        }
+        button{
+            background-color: skyblue;
+            padding: 10px 30px;
+            border-radius: 5px;
+            cursor:pointer;
+            color: white;
+        }
+        button:hover{
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="res">0</p>
+    <button id="incrementBtn">Increment</button>
+    <button id="decrementBtn">Decrement</button>
+    <button id="5incrementBtn">Increment by 5</button>
+    <button id="5decrementBtn">Decrement by 5</button>
+    <button id="reset">Reset</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

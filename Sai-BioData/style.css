@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .section {
+    font-weight: bold;
+    font-size: 25px;
+    color: green;
+    border-bottom: 3px solid rgb(76, 241, 73);
+  }
+  .section-content {
+    margin: 10px 0;
+    display: block;
+  }
+  .language-chip {
+    background-color: green;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0;
+    color: white;
+  }
+  button {
+    background-color: green;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: rgb(41, 244, 14);
+  }
+  .section-container{
+    margin-bottom: 15px;
+  }
+  .foot{
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+  }
