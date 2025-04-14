@@ -1,12 +1,11 @@
 "user Strict";
 
-
-
 let picnumberbtn=document.getElementById("picnumberbtn");
 let resultbtn=document.getElementById("result")
 let sheetcontainer=document.getElementById("lottery-sheet-container")
 const tick=new Audio("Win.wav")
 const win=new Audio("Final.wav");
+
 const gift=[  
   "Smartwatch",
   "Fitness Tracker",
@@ -60,12 +59,22 @@ const gift=[
   "Self-Care Kit"
   ]
 
+  //Rendering all the Gift Details
+  gift.forEach(function(val,idx){
+    const box=`<div class="box" id=${idx+1}>${idx+1}.${val}</div>`;
+    sheetcontainer.insertAdjacentHTML("beforeend",box)
+  })
+
+//Pic the number 
 picnumberbtn.addEventListener('click',function(){
   for(let idx=1;idx<50;idx++){
     document.getElementById(idx).classList.remove("winningbox");
   } 
     //console.log(Math.floor(Math.random()*10))
     resultbtn.textContent="Please wait...";
+
+    //Setting the 5 secoond timeout to know the gift which was win by us using setTimeout 
+
     // setTimeout(function(){
     //   let randomnumber=Math.random()*50;
     //   //console.log(randomnumber)
@@ -78,12 +87,15 @@ picnumberbtn.addEventListener('click',function(){
     //   document.getElementById(drawnnumber).classList.add("winningbox");
     // },5000);
 
+    //Using SetInterval to engage the user second to second upto 5 counts and reveleing the gift
     let secondscount=0;
     const intervalid=setInterval(function() {
       tick.pause();
       tick.currentTime=0;
       tick.play();
       secondscount++;
+      
+      //This is used to highlight the boxed during the 5 seconds engaging interval.
       const randombox=Math.floor(Math.random() *50)+1;
      // document.getElementById(randomnumber).classList.add("highlightedbox")
       for(let idx=1;idx<=50;idx++){
@@ -94,6 +106,9 @@ picnumberbtn.addEventListener('click',function(){
           document.getElementById(idx).classList.remove("highlightedbox")
         }
       }
+
+      //This is used to reveal the gift won by user after 5 seconds using secondscount.
+
       //console.log(randomnumber)
       if(secondscount===5){
         let randomnumber=Math.random()*50;
@@ -116,10 +131,7 @@ picnumberbtn.addEventListener('click',function(){
     
 })
 
-gift.forEach(function(val,idx){
-  const box=`<div class="box" id=${idx+1}>${idx+1}.${val}</div>`;
-  sheetcontainer.insertAdjacentHTML("beforeend",box)
-})
+
 
 
 
