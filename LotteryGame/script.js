@@ -63,7 +63,7 @@ const gift=[
 picnumberbtn.addEventListener('click',function(){
   for(let idx=1;idx<50;idx++){
     document.getElementById(idx).classList.remove("winningbox");
-  }
+  } 
     //console.log(Math.floor(Math.random()*10))
     resultbtn.textContent="Please wait...";
     // setTimeout(function(){
@@ -98,7 +98,7 @@ picnumberbtn.addEventListener('click',function(){
       if(secondscount===5){
         let randomnumber=Math.random()*50;
       //console.log(randomnumber)
-      console.log(Math.floor(randomnumber)+1)
+      //console.log(Math.floor(randomnumber)+1)
       //console.log(Math.ceil(randomnumber))
       let drawnnumber=Math.floor(randomnumber)+1
       //console.log(gift[drawnnumber-1])
